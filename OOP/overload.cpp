@@ -3,26 +3,25 @@ using namespace std;
 class Test
 {
     public:
-    Test()
-    {
-        cout<<"Hello";
-    }
+    int a;
     Test(int x)
     {
-        cout<<x;
+        a=x;
     }
-    Test(char x)
+    Test()
     {
-        cout<<x;
+        cout<<a;
     }
+   
+    
 };
 
 int main()
 {
-    Test t;
+   
     Test t1(2);                             
-    Test t2('A');
-    Test t3(2);
+    
+    Test t2();
     
     
 }
