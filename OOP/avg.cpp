@@ -28,7 +28,7 @@ int main()
     Avg d;
     d.insert(1,2,3);
     d.display();
-    // return 0;
+    return 0;
     // cout<<avg;
 
 }
