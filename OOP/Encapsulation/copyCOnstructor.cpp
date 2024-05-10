@@ -10,19 +10,19 @@ class A
 {
     public:
     int x;
-    A(int a)                //parrametrized constructor
+    A(int a)      //a=20          //parrametrized constructor
     {
-        x=a;
+        x=a;       //x=20
     }
-    A(A &i)               //copy constructor
+    A(A &i)               //copy constructor    i=101 (101.x for old)
     {
         x=i.x;
     }
 };
 int main()
 {
-    A a1(20);       ///Calling the parametrized constructor
-    A a2(a1);         //Calling the copy constructor
-    cout<<a2.x;
+    A a1(20);       ///Calling the parametrized constructor  .a1 address 101
+    A a2(a1);         //Calling the copy constructor . A a2(101)
+    cout<<a2.x;         //102.x
     return 0;
 }
